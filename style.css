@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%; 
+ height: 100vh; 
+ font-family: "Inter", sans-serif;
+}
+
+.card{
+    width: 300px;
+    height: 530px;
+    border: 1px solid #cecece;
+    border-radius: 20px;
+    padding: 25px;
+}
+.card i{
+    color: #F2B4B2;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+}
+.tick{
+    margin-right: auto;
+}
+.other i:first-child{
+    padding-right: 10px;
+}
+
+.cardTitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.cardTitle p:focus{
+    outline: none;
+}
+
+.inputContent{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #E92C2C;
+    margin-bottom: 10px;
+}
+.inputContent p span{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: black;
+}
+.date{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.date i{
+    color: #cecece;
+    padding-right: 10px;
+}
+.assign{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.assign .content{
+    margin-right: auto;
+    color: #5a5a5a;
+    font-style: italic;
+}
+.assign i{
+    padding-right: 10px;
+}
+.users{
+    border: 1px solid #cecece;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #009379;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    border-radius: 20px;
+    margin-right: 5px;
+}
+/* .profile i{
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
+} */
+.noteContainer{
+    display: flex;
+    color: #5a5a5a;
+}
+.note{
+    margin-right: auto;
+    font-style: italic;
+}
+.note i{
+    padding-right: 10px;
+}
+.notecontent{
+    border: 1px solid #cecece;
+    padding: 10px;
+    border-radius: 10px;
+    width: 190px;
+}
+
+hr{
+    border: .5px solid #cecece;
+    margin: 10px 0;
+}
+
+.comments img{
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.comment{
+    color: #5a5a5a;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.com1{
+    display: flex;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #009379;
+}
+.com1 span{
+    color: #5a5a5a;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+}
+.comBox{
+    display: flex;
+    align-items: center;
+}
+.commentContent{
+    width: 220px;
+}
+
+
+.cominput{
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    border: 1px #cecece solid;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 25px;
+    width: 230px;
+    display: flex;
+}
+input{
+    border: hidden;
+    margin-right: auto;
+    outline: none;
+}
+.input i{
+    cursor: pointer;
+}
+.commentContainer{
+    overflow-y: scroll;
+    height: 150px;
+}
+.input button{
+    border: hidden;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons button{
+    border: hidden;
+    padding: 2px 0;
+}
+.assignDropdown{
+   border: none;
+    color: #009379;
+    font-size: 14px;
+    font-weight: 700;
+}
+.assignDropdown:focus{
+    outline: none;
+}
+ 

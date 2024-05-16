@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef818a9ff4.js" crossorigin="anonymous"></script>
+    <title>Chat Page</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="btns">
+                <div class="tick">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="other">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </div>
+            <div class="cardTitle" id="cardTitle">
+                <div class="inputContent" id="titleContent">
+                    <p id="editableTitle">Flower Arrangement<span>|</span></p>
+                </div>
+                <div class="date" id="dateContent">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p id="editableDate">Dec 5,2024 at 8:00-10:00 AM</p>
+                </div>
+            </div>
+            <div class="assign">
+                <div class="content">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Assign to:</span>
+                </div>
+                <div class="users">
+                    <div class="profile">
+                        <img src="https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__" 
+                        alt="profile" width="25px" height="25px">
+                        <select id="assignDropdown" class="assignDropdown">
+                            <option value="Jane Smith">Jane Smith</option>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Emily Johnson">Emily Johnson</option>
+                        </select>
+                    </div> 
+                </div>
+            </div>
+            <div class="noteContainer">
+                <div class="note">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <span>Note:</span>
+                </div>
+                <div class="notecontent">
+                    <p>09382049832</br>
+                    www.flowervendor.com</p>
+                </div>
+            </div>
+            <hr>
+            <div class="comments">
+                <div class="comment">Comments</div>
+                <div id="commentContainer" class="commentContainer">
+                    <div class="com1">
+                        <div class="comimg">
+                            <img src="https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__" 
+                            alt="profile" width="25px" height="25px">
+                        </div>
+                        <div class="comBox">
+                            <p>Jane Smith<br>
+                                <span>Thanks for assigning me on the task. We'll get the details ironed out.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="com1">
+                        <div class="comimg">
+                            <img src="https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__" 
+                            alt="profile" width="25px" height="25px">
+                        </div>
+                        <div class="comBox">
+                            <div class="commentContent">Jane Smith<br>
+                                <span>Thanks for assigning me on the task. We'll get the details ironed out.</span>
+                            </div>
+                            <div class="buttons">
+                                <button id="editButton" onclick="handleEdit(this)">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                                <button id="deleteButton" onclick="handleDelete(this)">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <form id="commentForm" class="cominput">
+                    <img src="https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__" 
+                    alt="profile" width="25px" height="25px">
+                    <div class="input">
+                        <input type="text" name="comment" id="commentText" placeholder="Write comment....">
+                        <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
